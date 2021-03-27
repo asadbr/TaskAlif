@@ -19,4 +19,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.card {
+  border-radius: 5%;
+  background-color: azure;
+}
+</style>
