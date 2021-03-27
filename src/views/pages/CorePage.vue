@@ -30,7 +30,7 @@ export default {
   watch: {
     info: {
       handler() {
-        if (Object.values(this.info).every((item) => item.length != 0)) {
+        if (Object.values(this.info).every((item) => item.length !== 0)) {
           console.log(JSON.stringify(this.info));
         }
       },

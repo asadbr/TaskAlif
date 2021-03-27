@@ -7,7 +7,6 @@
           <input
             type="text"
             class="form-control"
-            aria-describedby="emailHelp"
             placeholder="name"
             v-model="info.name"
           />
