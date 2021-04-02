@@ -1,6 +1,6 @@
 <template>
-  <div class="card">
-    <div class="card-body">
+  <div class="card shadow-sm">
+    <div class="card-body d-flex flex-column justify-content-start">
       <div class="class-title"><h5>Информации</h5></div>
       <p class="name mt-3">Name: {{ info.name }}</p>
       <p>Surname: {{ info.surname }}</p>
@@ -28,13 +28,6 @@ export default {
 
 <style scoped>
 .card {
-  padding: 5px;
   height: 280px;
-  background-color: azure;
-}
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
 }
 </style>

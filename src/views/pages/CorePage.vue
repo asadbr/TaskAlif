@@ -50,6 +50,6 @@ export default {
   align-items: center;
 }
 .body {
-  background-color: slategray;
+  background-color: #eee;
 }
 </style>

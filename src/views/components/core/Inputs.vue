@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card shadow-sm">
     <div class="card-body">
       <div class="card-title"><h5>Вводные Данные</h5></div>
       <form>
@@ -54,8 +54,6 @@ export default {
 
 <style scoped>
 .card {
-  padding: 5px;
   height: 280px;
-  background-color: azure;
 }
 </style>
