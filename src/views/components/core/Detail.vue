@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-body">
       <div class="class-title"><h5>Информации</h5></div>
-      <p>Name: {{ info.name }}</p>
+      <p class="name mt-3">Name: {{ info.name }}</p>
       <p>Surname: {{ info.surname }}</p>
       <p>
         Birth-Date:
@@ -28,6 +28,13 @@ export default {
 
 <style scoped>
 .card {
+  padding: 5px;
+  height: 280px;
   background-color: azure;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

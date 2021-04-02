@@ -54,6 +54,8 @@ export default {
 
 <style scoped>
 .card {
+  padding: 5px;
+  height: 280px;
   background-color: azure;
 }
 </style>
