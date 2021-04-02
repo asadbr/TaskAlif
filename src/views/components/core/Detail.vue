@@ -35,6 +35,6 @@ export default {
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 </style>

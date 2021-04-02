@@ -22,7 +22,7 @@
         <div class="mb-3">
           <datepicker
             :bootstrap-styling="true"
-            placeholder="Select Date"
+            placeholder="birth date"
             v-model="info.birthDate"
           ></datepicker>
         </div>
