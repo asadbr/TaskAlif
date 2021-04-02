@@ -1,11 +1,13 @@
 <template>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-12 col-md-5">
-        <inputs :info="info" />
-      </div>
-      <div class="col-12 col-md-5">
-        <detail :info="info" />
+  <div class="body min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <inputs :info="info" />
+        </div>
+        <div class="col-12 col-md-3">
+          <detail :info="info" />
+        </div>
       </div>
     </div>
   </div>
@@ -40,4 +42,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  background-color: slategray;
+}
+</style>

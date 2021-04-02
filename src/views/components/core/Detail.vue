@@ -4,7 +4,14 @@
       <div class="class-title"><h5>Информации</h5></div>
       <p>Name: {{ info.name }}</p>
       <p>Surname: {{ info.surname }}</p>
-      <p>Birth-Date: {{ info.birthDate }}</p>
+      <p>
+        Birth-Date:
+        <span v-if="info.birthDate">
+          {{ new Date(info.birthDate).getDate() }}/{{
+            new Date(info.birthDate).getMonth()
+          }}/{{ new Date(info.birthDate).getFullYear() }}
+        </span>
+      </p>
       <p>(select): {{ info.select }}</p>
     </div>
   </div>
@@ -21,7 +28,6 @@ export default {
 
 <style scoped>
 .card {
-  border-radius: 5%;
   background-color: azure;
 }
 </style>

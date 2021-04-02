@@ -20,19 +20,14 @@
           />
         </div>
         <div class="mb-3">
-          <input
-            type="date"
-            class="form-control"
-            placeholder="birth date"
+          <datepicker
+            :bootstrap-styling="true"
+            placeholder="Select Date"
             v-model="info.birthDate"
-          />
+          ></datepicker>
         </div>
         <div class="mb-3">
-          <select
-            class="form-select"
-            aria-label="Default select example"
-            v-model="info.select"
-          >
+          <select class="form-select" v-model="info.select">
             <option value="" selected disabled>(select)</option>
             <option value="Star">Star</option>
             <option value="Heart">Heart</option>
@@ -45,17 +40,20 @@
 </template>
 
 <script>
+import Datepicker from "vuejs-datepicker";
 export default {
   name: "Inputs",
   props: {
     info: Object,
+  },
+  components: {
+    Datepicker,
   },
 };
 </script>
 
 <style scoped>
 .card {
-  border-radius: 5%;
   background-color: azure;
 }
 </style>
